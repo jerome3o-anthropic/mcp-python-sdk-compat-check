@@ -1,4 +1,11 @@
+import sys
 from mcp.server.fastmcp import FastMCP
+from importlib.metadata import version
+
+SERVER_SDK_VERSION = version("mcp")
+
+# print version to stderr
+print(f"server: {SERVER_SDK_VERSION}", file=sys.stderr)
 
 mcp = FastMCP()
 

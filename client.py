@@ -16,7 +16,6 @@ else:
     sys.exit(1)
 
 print(f"client: {CLIENT_SDK_VERSION}")
-print(f"server: {SERVER_SDK_VERSION}")
 
 parent_folder = Path(__file__).parent
 server_file = str(parent_folder / "server.py")
