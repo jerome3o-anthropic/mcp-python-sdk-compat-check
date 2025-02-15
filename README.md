@@ -77,11 +77,7 @@ The compatibility test:
 ## Example Workflow
 
 ```bash
-# Add the versions you want to test
-./add_version.sh 1.2.1
-./add_version.sh 1.3.0.rc1
-
-# Run the compatibility matrix test
+# Run the compatibility matrix test (this will automatically add the versions if not present)
 ./check_matrix.sh 1.2.1 1.3.0.rc1
 
 # Check the results
